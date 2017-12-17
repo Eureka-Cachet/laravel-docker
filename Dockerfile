@@ -19,8 +19,8 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-configure gmp
 
 # install wkhtmltopdf
-# RUN         apt-get update && \
-#             apt-get install -y xvfb libfontconfig wkhtmltopdf
+RUN         apt-get update && \
+            apt-get install -y xvfb libfontconfig wkhtmltopdf
 
 # install supervisor
 RUN         apt-get install -y supervisor && \
