@@ -19,8 +19,8 @@ RUN apt-get update && apt-get install -y \
     && docker-php-ext-configure gmp
 
 # install wkhtmltopdf
-RUN         apt-get update && \
-            apt-get install -y xvfb libfontconfig wkhtmltopdf
+# RUN         apt-get update && \
+#             apt-get install -y xvfb libfontconfig wkhtmltopdf
 
 # install supervisor
 RUN         apt-get install -y supervisor && \
@@ -31,11 +31,11 @@ RUN         curl -sS https://getcomposer.org/installer | /usr/local/bin/php -- -
 
 
 # Install Node.js
-RUN         apt-get install -y build-essential
+# RUN         apt-get install -y build-essential
 
-RUN         curl -sL https://deb.nodesource.com/setup_8.x | bash -
+# RUN         curl -sL https://deb.nodesource.com/setup_8.x | bash -
 
-RUN         apt-get install -y nodejs
+# RUN         apt-get install -y nodejs
 
 RUN         apt-get update \
             && apt-get -y autoremove && apt-get clean \
