@@ -1,4 +1,4 @@
-FROM        7.1.12-fpm-jessie
+FROM        7.1-fpm
 
 MAINTAINER  eurekacachetdev@gmail.com
 
