@@ -1,4 +1,4 @@
-FROM        php:7.2-fpm
+FROM        7.1.12-fpm-jessie
 
 MAINTAINER  eurekacachetdev@gmail.com
 
@@ -7,7 +7,7 @@ RUN apt-get update && apt-get install -y \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
         libmcrypt-dev \
-        libpng12-0 \
+        libpng12-dev \
         mysql-client \
         libgmp-dev \
         libpq-dev \
